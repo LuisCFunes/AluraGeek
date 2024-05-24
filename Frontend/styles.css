@@ -1,0 +1,152 @@
+:root {
+  --bg-principal: #5d04d9;
+  --bg-btn: #03318c;
+  --font-product: "IBM Plex Mono", monospace;
+}
+
+body {
+  font-family: var(--font-product);
+  min-height: 100vh;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.Header {
+  background-color: var(--bg-principal);
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding: 10px;
+  margin-bottom: 12px;
+  & img {
+    margin: 0px auto;
+  }
+}
+
+.products-section {
+  margin-top: 26px;
+  padding: 0 10px;
+  max-width: 100%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 4px;
+}
+
+.product {
+  display: grid;
+  grid-template-rows: 180px 1fr 1fr;
+  width: 196px;
+  height: 258px;
+  padding: 6px;
+  border-radius: 10px;
+  border: 4px solid #000;
+  background-color: var(--bg-principal);
+  color: #fff;
+  font-family: var(--font-product);
+}
+
+.img-product {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.info-product {
+  display: flex;
+  justify-content: space-between;
+  max-width: 95%;
+  font-weight: bold;
+}
+
+.section-add {
+  margin-top: 26px;
+  max-width: 100%;
+  padding: 0 10px;
+  & img {
+    margin: 0px auto;
+  }
+}
+
+.form-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="number"],
+.form-container input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin: 20px 0;
+  border: 2px solid #000080;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.form-container input[type="submit"],
+.form-container input[type="reset"] {
+  width: 45%;
+  padding: 10px;
+  margin: 10px 1%;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"] {
+  background-color: var(--bg-btn);
+  color: #fff;
+}
+
+.form-container input[type="reset"] {
+  background-color: #fff;
+  color: var(--bg-btn);
+  border: 2px solid #000080;
+}
+
+.form-container input[type="text"]::placeholder,
+.form-container input[type="number"]::placeholder,
+.form-container input[type="file"]::placeholder {
+  color: var(--bg-btn);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.form-container input[type="text"]:-ms-input-placeholder,
+.form-container input[type="number"]:-ms-input-placeholder,
+.form-container input[type="file"]:-ms-input-placeholder {
+  color: var(--bg-btn);
+}
+
+.form-container input[type="text"]::-ms-input-placeholder,
+.form-container input[type="number"]::-ms-input-placeholder,
+.form-container input[type="file"]::-ms-input-placeholder {
+  color: var(--bg-btn);
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  margin-top: calc(30.5vh);
+  color: #fff;
+  background-color: var(--bg-principal);
+  text-align: center;
+  & img {
+    margin: 0 auto;
+  }
+  & p {
+    font-size: 14px;
+  }
+}

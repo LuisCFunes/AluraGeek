@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <link href="styles.css" rel="stylesheet" />
+    <link href="reset.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <h1 class="Header"><img src="./img/Logo.svg" alt="Logo AluraGeek" /></h1>
+
+    <main>
+      <section class="products-section">
+        <h2 class="title">
+          <img src="./img/MIS PRODUCTOS_.svg" alt="Mis productos title" />
+        </h2>
+        <div class="products-container" data-products>
+        </div>
+      </section>
+      <section class="section-add">
+        <h2>
+          <img src="./img/AGREGAR PRODUCTO_.svg" alt="" />
+        </h2>
+        <div class="form-container">
+          <form>
+            <input type="text" name="nombre" placeholder="nombre..." />
+            <input type="number" name="precio" placeholder="precio..." />
+            <input type="file" name="imagen" placeholder="imagen..." />
+            <input type="submit" value="Enviar" />
+            <input type="reset" value="Limpiar" />
+          </form>
+        </div>
+      </section>
+    </main>
+    
+    <footer>
+      <img src="./img/logo-footer.svg" alt="logo-footer"></img>
+      <h3>Desarrollado por Luis Funes</h3>
+      <p>ALURA LATAM 2024</p>
+    </footer>
+
+    <script type="module" src="../Backend/app.js"></script>
+    <script type="module" src="../Backend/showProducts.js"></script>
+  </body>
+</html>
