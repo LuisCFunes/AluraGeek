@@ -85,7 +85,7 @@ main {
 
 .form-container input[type="text"],
 .form-container input[type="number"],
-.form-container input[type="file"] {
+.form-container input[type="url"] {
   width: 100%;
   padding: 10px;
   margin: 20px 0;
@@ -94,8 +94,8 @@ main {
   font-size: 16px;
 }
 
-.form-container input[type="submit"],
-.form-container input[type="reset"] {
+.form-container button {
+  height: 48px;
   width: 45%;
   padding: 10px;
   margin: 10px 1%;
@@ -105,12 +105,12 @@ main {
   cursor: pointer;
 }
 
-.form-container input[type="submit"] {
+.form-container button[type="submit"] {
   background-color: var(--bg-btn);
   color: #fff;
 }
 
-.form-container input[type="reset"] {
+.form-container button[type="reset"] {
   background-color: #fff;
   color: var(--bg-btn);
   border: 2px solid #000080;
@@ -118,7 +118,7 @@ main {
 
 .form-container input[type="text"]::placeholder,
 .form-container input[type="number"]::placeholder,
-.form-container input[type="file"]::placeholder {
+.form-container input[type="url"]::placeholder {
   color: var(--bg-btn);
   font-size: 16px;
   font-weight: 600;
@@ -126,13 +126,13 @@ main {
 
 .form-container input[type="text"]:-ms-input-placeholder,
 .form-container input[type="number"]:-ms-input-placeholder,
-.form-container input[type="file"]:-ms-input-placeholder {
+.form-container input[type="url"]:-ms-input-placeholder {
   color: var(--bg-btn);
 }
 
 .form-container input[type="text"]::-ms-input-placeholder,
 .form-container input[type="number"]::-ms-input-placeholder,
-.form-container input[type="file"]::-ms-input-placeholder {
+.form-container input[type="url"]::-ms-input-placeholder {
   color: var(--bg-btn);
 }
 

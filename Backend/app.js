@@ -1,42 +1,34 @@
-const endpoint = "http://localhost:3000/productos";
+const endpoint = "http://localhost:5500/productos";
 
 async function getProducts() {
-  let response = await fetch("http://localhost:3000/productos");
-  let userData = response.json();
-  return userData;
+  try {
+    let conection = await fetch(endpoint);
+    if (!conection.ok) {
+      throw new Error(`HTTP error! status: ${conection.status}`);
+    }
+    let productsData = await conection.json();
+    return productsData;
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
+async function createProduct(imagen, nombre, precio) {
+  let conection = await fetch(endpoint, {
+    method: "POST",
+    headers: { "Content-type": "application/json" },
+    body: JSON.stringify({
+      imagen: imagen,
+      nombre: nombre,
+      precio: precio,
+    }),
+  });
+
+  const conectionDone = await conection.json(); 
+  return conectionDone;
 }
 
 export const conectionAPI = {
   getProducts,
+  createProduct,
 };
-
-const cardProducts = document.querySelector("[data-products]");
-
-function createCard(imagen, nombre, precio) {
-  const card = document.createElement("div");
-  card.className = "product";
-  card.innerHTML = `<img
-  class="img-product"
-  src="${imagen}"
-  alt="img product"
-/>
-<p class="name-product"> ${nombre}</p>
-<div class="info-product">
-  <span>$ ${precio}</span>
-  <span
-    ><img src="./img/trash.svg" alt="btn for delete product"
-  /></span>
-</div>
-</div>`;
-
-  return card;
-}
-
-async function listCards() {
-  const listApi = await conectionAPI.getProducts();
-  listApi.forEach((card) =>
-    cardProducts.appendChild(createCard(card.imagen, card.nombre, card.precio))
-  );
-}
-
-listCards();

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>AluraGeek</title>
     <link href="styles.css" rel="stylesheet" />
     <link href="reset.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,12 +29,12 @@
           <img src="./img/AGREGAR PRODUCTO_.svg" alt="" />
         </h2>
         <div class="form-container">
-          <form>
-            <input type="text" name="nombre" placeholder="nombre..." />
-            <input type="number" name="precio" placeholder="precio..." />
-            <input type="file" name="imagen" placeholder="imagen..." />
-            <input type="submit" value="Enviar" />
-            <input type="reset" value="Limpiar" />
+          <form data-form>
+            <input type="text" name="nombre" placeholder="nombre..." data-nombre/>
+            <input type="number" name="precio" placeholder="precio..." data-precio/>
+            <input type="url" name="imagen" placeholder="url de la imagen..." data-imagen/>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
           </form>
         </div>
       </section>
@@ -45,8 +45,7 @@
       <h3>Desarrollado por Luis Funes</h3>
       <p>ALURA LATAM 2024</p>
     </footer>
-
-    <script type="module" src="../Backend/app.js"></script>
-    <script type="module" src="../Backend/showProducts.js"></script>
+    <script type="module" src="../Backend/createCard.js"></script>
+    <script type="module" src="../Backend/createNewCard.js"></script>
   </body>
 </html>
