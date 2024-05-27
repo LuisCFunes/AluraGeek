@@ -67,6 +67,12 @@ main {
   font-weight: bold;
 }
 
+.btn-delete{
+background-color: transparent;
+border: none;
+cursor: pointer;
+}
+
 .section-add {
   margin-top: 26px;
   max-width: 100%;

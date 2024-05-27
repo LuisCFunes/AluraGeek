@@ -19,25 +19,13 @@
       "id": "5"
     },
     {
-      "nombre": "Hulk",
-      "precio": "11",
-      "imagen": "https://imgs.search.brave.com/G5TR3PQNUmaZJOZoMMTiaCNB4z2-81M6p0Ab4mrB3dw/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NDFvY0cxNVlQUkwu/anBn",
-      "id": "6"
-    },
-    {
-      "nombre": "Black Widow",
-      "precio": "13",
-      "imagen": "https://imgs.search.brave.com/todYpUM_siUPauK-WcAAtX4ZzEVHRhTFBs3hdLSo2kU/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NjFqeXBpcW5YNUwu/anBn",
-      "id": "7"
-    },
-    {
       "nombre": "Hawkeye",
       "precio": "9",
       "imagen": "https://imgs.search.brave.com/hSo6cuROwHj75B8BeItkgDwV5S79KIzPv6hynlexi4M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF2aHNyaTI2MEwu/anBn",
       "id": "8"
     },
     {
-      "id": "a42b",
+      "id": "d7e2",
       "imagen": "https://imgs.search.brave.com/hSo6cuROwHj75B8BeItkgDwV5S79KIzPv6hynlexi4M/rs:fit:860:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL0kv/NTF2aHNyaTI2MEwu/anBn",
       "nombre": "Batman",
       "precio": "20.00"

@@ -28,7 +28,23 @@ async function createProduct(imagen, nombre, precio) {
   return conectionDone;
 }
 
+async function deleteProduct(id) {
+  const deleteEndpoint = `${endpoint}/${id}`;
+  try {
+    let connection = await fetch(deleteEndpoint, {
+      method: "DELETE",
+    });
+    if (!connection.ok) {
+      throw new Error(`HTTP error! status: ${connection.status}`);
+    }
+    return connection.json(); // Optionally return response or status
+  } catch (error) {
+    console.error("Error:", error);
+  }
+}
+
 export const conectionAPI = {
   getProducts,
   createProduct,
+  deleteProduct
 };
